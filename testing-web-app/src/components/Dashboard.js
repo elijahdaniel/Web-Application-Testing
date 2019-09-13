@@ -37,7 +37,6 @@ function Dashboard() {
     <>
       <Display balls={ball} strikes={strike} hit={hit} foul={foul} />
       <div className='controls'>
-        <h4>Control Station</h4>
         <div className='btn-holder'>
           <button onClick={addBall}>ball</button>
           <button onClick={addStrike}>strike</button>
