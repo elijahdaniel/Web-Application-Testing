@@ -45,6 +45,7 @@ table {
   height: 350px;
   margin: 0 auto;
   border-radius: 30px;
+  box-shadow: 0px 6px 20px -20px #000;
 }
 
 .Container h1 {
@@ -69,6 +70,7 @@ table {
   width: 90px;
   margin: 0 10px;
   border-radius: 5px;
+  box-shadow: 0px 3px 12px -10px #000;
 }
 
 .cardTitle {
@@ -123,6 +125,7 @@ table {
   background: #9572d4;
   transition: all 0.3s linear;
   color: white;
+  box-shadow: 0px 6px 6px -8px #000;
 }
 
 .btn-holder button:hover {
@@ -130,4 +133,5 @@ table {
   cursor: pointer;
   background: transparent;
   border: 1px solid #9572d4;
+  box-shadow: 0px 6px 6px -6px transparent;
 }
