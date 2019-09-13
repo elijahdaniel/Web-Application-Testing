@@ -19,6 +19,7 @@ export default class Dashboard extends Component {
         />
         <div className='controls'>
           <button
+            className='strikeButton'
             onClick={() => {
               if (this.state.strike < 3) {
                 this.setState({ strike: this.state.strike + 1 })
@@ -30,6 +31,7 @@ export default class Dashboard extends Component {
             Strike Button
           </button>
           <button
+            className='ballButton'
             onClick={() => {
               if (this.state.ball < 4) {
                 this.setState({ ball: this.state.ball + 1 })
@@ -41,6 +43,7 @@ export default class Dashboard extends Component {
             Ball Button
           </button>
           <button
+            className='foulButton'
             onClick={() => {
               if (this.state.foul < 4) {
                 this.setState({ foul: this.state.foul + 1 })
@@ -52,6 +55,7 @@ export default class Dashboard extends Component {
             Foul Button
           </button>
           <button
+            className='resetButton'
             onClick={() => {
               this.setState({
                 strike: 0,
