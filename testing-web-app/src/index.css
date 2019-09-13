@@ -113,7 +113,7 @@ table {
 .btn-holder button {
   margin-left: 5px;
   margin-right: 5px;
-  border: 0;
+  border: 1px solid transparent;
   border-radius: 30px;
   padding: 5px 20px;
   font-size: .9rem;
@@ -121,12 +121,13 @@ table {
   outline: 0;
   text-transform: capitalize;
   background: #9572d4;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   color: white;
 }
 
 .btn-holder button:hover {
-  color: #525252;
+  color: #9572d4;
   cursor: pointer;
-  background: linear-gradient(to top left, #9572d4, transparent, white);
+  background: transparent;
+  border: 1px solid #9572d4;
 }
