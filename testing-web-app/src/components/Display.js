@@ -1,26 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Display extends Component {
-  render() {
-    return (
-      <div className='display'>
-        <section>
-          <h3>Strike</h3>
-          <span>{this.props.strike}</span>
-        </section>
-        <section>
-          <h3>Ball</h3>
-          <span>{this.props.ball}</span>
-        </section>
-        <section>
-          <h3>Foul</h3>
-          <span>{this.props.foul}</span>
-        </section>
-        <section>
-          <h3>Hit</h3>
-          <span>{this.props.hit}</span>
-        </section>
-      </div>
-    )
-  }
+function Display(props) {
+  return (
+    <div>
+      <p>{props.balls} Ball</p>
+      <p>{props.strikes} Strike</p>
+      <p>{props.hit} Hit</p>
+      <p>{props.foul} Foul</p>
+    </div>
+  )
 }
+
+export default Display
