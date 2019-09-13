@@ -6,6 +6,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -34,13 +39,106 @@ table {
 
 /* after reset */
 
-* {
-  box-sizing: border-box;
+.Container {
+  background: aliceblue;
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 30px;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.Container h1 {
+  font-family: lobster;
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px auto;
+  padding-top: 20px;
+  color: #9572d4;
+}
+
+.scores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.scoreCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.cardTitle {
+  background: #9c9c9c;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: .8rem;
+  font-weight: 900;
+  text-transform: uppercase
+}
+
+.cardNum {
+  background: white;
+  padding: 10px 0;
+  font-size: 2rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.controls {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  background: rgba(212, 230, 245, 0.4);
+  width: 80%;
+  padding-bottom: 20px;
+}
+
+.controls h4 {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 900;
+  border-radius: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.btn-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-holder button {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 30px;
+  padding: 5px 20px;
+  font-size: .9rem;
+  font-weight: 600;
+  outline: 0;
+  text-transform: capitalize;
+  background: #9572d4;
+  transition: all 0.5s linear;
+  color: white;
+}
+
+.btn-holder button:hover {
+  color: black;
+  cursor: pointer;
+  background: linear-gradient(to top left, #9572d4, transparent, white);
 }

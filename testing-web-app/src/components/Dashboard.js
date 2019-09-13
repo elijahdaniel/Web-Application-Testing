@@ -29,14 +29,24 @@ function Dashboard() {
     }
   }
 
+  const reset = () => {
+    return setBall(0) & setStrike(0) & setHit(0) & setFoul(0)
+  }
+
   return (
-    <div>
+    <>
       <Display balls={ball} strikes={strike} hit={hit} foul={foul} />
-      <button onClick={addBall}>ball</button>
-      <button onClick={addStrike}>strike</button>
-      <button onClick={addHit}>hit</button>
-      <button onClick={addFoul}>foul</button>
-    </div>
+      <div className='controls'>
+        <h4>Control Station</h4>
+        <div className='btn-holder'>
+          <button onClick={addBall}>ball</button>
+          <button onClick={addStrike}>strike</button>
+          <button onClick={addHit}>hit</button>
+          <button onClick={addFoul}>foul</button>
+          <button onClick={reset}>reset</button>
+        </div>
+      </div>
+    </>
   )
 }
 
