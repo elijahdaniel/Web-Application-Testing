@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* after reset */
+
+.Container {
+  background: aliceblue;
+  width: 90%;
+  height: 350px;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 0px 6px 20px -20px #000;
+}
+
+.Container h1 {
+  font-family: lobster;
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px auto;
+  padding-top: 20px;
+  color: #9572d4;
+}
+
+.scores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.scoreCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90px;
+  margin: 0 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 12px -10px #000;
+}
+
+.cardTitle {
+  background: #9c9c9c;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: .8rem;
+  font-weight: 900;
+  text-transform: uppercase
+}
+
+.cardNum {
+  background: white;
+  padding: 10px 0;
+  font-size: 2rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.controls {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  background: rgba(212, 230, 245, 0.4);
+  width: 60%;
+  padding-bottom: 20px;
+}
+
+.btn-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-holder button {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 5px 20px;
+  font-size: .9rem;
+  font-weight: 600;
+  outline: 0;
+  text-transform: capitalize;
+  background: #9572d4;
+  transition: all 0.3s linear;
+  color: white;
+  box-shadow: 0px 6px 6px -8px #000;
+}
+
+.btn-holder button:hover {
+  color: #9572d4;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #9572d4;
+  box-shadow: 0px 6px 6px -6px transparent;
+}
